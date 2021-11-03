@@ -29,24 +29,37 @@
 <body>
 
 
-        <!--------------- Header Banner ------------------->
+    <!--------------- Header Banner ------------------->
     <header class="grid tall-100 md-tall-80"> 
 
         <div class="header-nav col-12-top grid">
-    <div class="col-5_sm-12-middle sm-padded-b-0"> 
+    <div class="col-5_sm-11-middle sm-padded-b-0"> 
         <a href="/index.html" class="logo"> 
             <h2> The Sleep Co </h2>
         </a>
         
     </div> 
-    <nav class="col-7_sm-12-middle text-right sm-text-center">
+    <nav class="col-7_sm-12-middle text-right sm-text-center hide-sm">
         <a href="/index.html"> Home </a> 
         <a href="/about.html"> About </a>
         <a href="/products.html"> Products </a>
         <a href="/contact.html"> Contact </a>
     </nav>
 
+    <div class="col-1 show-sm">
+        <div class="hamburger-button">
+        <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
 </div>
+
+<nav class="mobile-menu bg-featured padded">
+    <a href="/index.html"> Home </a> 
+    <a href="/about.html"> About </a>
+    <a href="/products.html"> Products </a>
+    <a href="/contact.html"> Contact </a>
+</nav>
 
         <div class="col-12 text-center"> 
             <h3 class="font-weight-extra-bold editable">
@@ -62,7 +75,7 @@
     <section class="grid"> 
         <div class="padded col-6_xs-12-middle">
             <h2 class="editable">
-                build to last a <span class="featured-text">lifetime</span>
+                build to last <span class="featured-text">forever</span>
             </h2> 
             <p class="editable">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque modi non <strong>quod deleniti </strong>a aspernatur minima veritatis ipsa obcaecati reprehenderit.
@@ -78,8 +91,8 @@
             <!-- background image pug sleeping  -->
         </div> 
         <div class="padded col-6_xs-12-middle editable">
-            <h2> so <span class="featured-text">soft</span> you'll melt </h2> 
-            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque modi non quod deleniti a aspernatur minima veritatis ipsa obcaecati reprehenderit, tempore ad voluptatum temporibus iure dolorem provident necessitatibus ratione! </p>     
+            <h2>so <span class="featured-text">soft</span> you'll melt</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque modi non quod deleniti a aspernatur minima veritatis ipsa obcaecati reprehenderit, tempore ad voluptatum temporibus iure dolorem provident necessitatibus ratione!</p>
         </div> 
     </section> 
 
@@ -93,15 +106,15 @@
         
 
         <div class="padded-sm col-3_sm-6 xxs-stack">
-            <i class="fab fa-pagelines"></i>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto incidunt vero et praesentium. Possimus quae praesentium eaque eius et id odit saepe repellat delectus, suscipit nobis facilis voluptatibus odio distinctio? </p>  
+            <i class="fas fa-cloud"></i>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto incidunt vero et praesentium. Possimus dignissimos quae praesentium eaque eius et id odit saepe repellat delectus, suscipit nobis facilis voluptatibus odio distinctio? </p>  
         </div> 
 
         
 
         <div class="padded-sm col-3_sm-6 xxs-stack">
-            <i class="fas fa-cloud"></i>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto incidunt vero et praesentium. Possimus dignissimos quae praesentium eaque eius et id odit saepe repellat delectus, suscipit nobis facilis voluptatibus odio distinctio? </p>  
+            <i class="fab fa-pagelines"></i>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto incidunt vero et praesentium. Possimus quae praesentium eaque eius et id odit saepe repellat delectus, suscipit nobis facilis voluptatibus odio distinctio? </p>  
         </div> 
 
         
@@ -144,8 +157,7 @@
         <div class="col-1">
             <span class="quote-icon">”</span>
         </div> 
-    </section> 
-
+    </section>
 
 
 
@@ -165,6 +177,12 @@
         </div> 
     </footer>
 
+
+    <!-- Add jQuery (this must go FIRST, before slider jquery and then last custom JS )-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <!-- our custom Javascript file-->
+     <script src="/scripts.js"></script>
 
 </body>
 </html>
