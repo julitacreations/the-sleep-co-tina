@@ -124,12 +124,22 @@
     background-image: url('/images/the-sleep-co-original1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb (240,240,240);
 }
 
-.landscape { padding-bottom: 65%;}
+/* Aspect Ratios ------*/
+.landscape { padding-bottom: 66%;}
+.landscape-wide { padding-bottom: 56%;}
 .portrait { padding-bottom: 125%;}
+.portrait-tall { padding-bottom: 175%;}
 .square   { padding-bottom: 100%;}
 
+/* Background Positions ------*/
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; } 
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
 
 /*  Typography Styles  --------------------  */
 
@@ -240,6 +250,11 @@ footer a {
     background-position: 50% 57%;
 }
 
+/* Image Gallery -----*/
+
+.gallery [class*="col-"] {
+    padding: 0.5%;
+}
 
 
 /* Buttons & Forms --------------------  */
