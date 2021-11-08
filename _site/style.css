@@ -4,19 +4,14 @@
     Navy: #192B37;
 
 
-
-.bg-dark { 
-    background-color: #192B37;
-    color: white;
-}
-.bg-featured { background-color: #F4B525; }
-.bg-light {  background-color: #E3ECF2; }
-
-
 */
 
 :root {
     --dark: #192B37;
+    --featured: #F4B525;
+    --featured-text: #FFBE00;
+    --light: #E3ECF2;
+    --sans-serif: 'Catamaran', sans-serif;
 }
 
 
@@ -132,8 +127,8 @@
     background-color: var(--dark);
     color: white;
 }
-.bg-featured { background-color: #F4B525; }
-.bg-light {  background-color: #E3ECF2; }
+.bg-featured { background-color: var(--featured); }
+.bg-light {  background-color: var(--light); }
 
 /* Image Styles */
 .bg-image {
@@ -160,8 +155,8 @@
 /*  Typography Styles  --------------------  */
 
 body { 
-    font-family: 'Catamaran', sans-serif;
-    color: #192B37;
+    font-family: var(--sans-serif);
+    color: var(--dark);
 }
 
 h2, h3, h4, h5, h6 {
@@ -202,7 +197,7 @@ a:hover {
 .text-center    {  text-align: center;  }
 .text-right     {  text-align: right;    }
 
-.featured-text  {  color: #FFBE00; }
+.featured-text  {  color: var(--featured-text); }
 .white-text     {  color: white; }
 
 .small-text     {  font-size: 1.5rem; }
@@ -304,15 +299,15 @@ textarea {
 
 input:focus, 
 textarea:focus {
-    border: 2px solid #FFBE00; 
+    border: 2px solid var(--featured-text); 
     outline:none;
 }
 
 .button {
     padding: 0.5rem 2rem;
-    background-color: #FFBE00;
+    background-color: var(--featured-text);
     appearance: none;
-    border: 2px solid #FFBE00;
+    border: 2px solid var(--featured-text);
     color: inherit;
 }
 
