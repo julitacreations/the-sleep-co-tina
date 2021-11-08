@@ -1,8 +1,24 @@
-/* 
+/* NOTES 
     Colors: 
     Yellow: #FFBE00;
     Navy: #192B37;
+
+
+
+.bg-dark { 
+    background-color: #192B37;
+    color: white;
+}
+.bg-featured { background-color: #F4B525; }
+.bg-light {  background-color: #E3ECF2; }
+
+
 */
+
+:root {
+    --dark: #192B37;
+}
+
 
 /* CSS RESET */
 
@@ -113,7 +129,7 @@
 /* Backgrounds & Images  -------------------- */
 
 .bg-dark { 
-    background-color: #192B37;
+    background-color: var(--dark);
     color: white;
 }
 .bg-featured { background-color: #F4B525; }
